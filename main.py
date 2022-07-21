@@ -166,7 +166,7 @@ class Register:
     #B) It checks if the "confirm password" entry and the "password" entry are the same
     def check(self):
         #The following line ensures there's no blanks
-        if self.reg_name_entry.get() != "" or self.reg_password_entry.get() != "" or self.confirm_password_entry.get() != "":
+        if self.reg_name_entry.get() != "" and self.reg_password_entry.get() != "" and self.confirm_password_entry.get() != "":
             #If the following entries match, then execute
             if self.reg_password_entry.get() == self.confirm_password_entry.get():
                 #opens the following txt file to write to (add user entry)
